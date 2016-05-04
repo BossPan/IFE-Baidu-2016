@@ -31,7 +31,7 @@
         }
     }
 
-    var subject = ['姓名', '语文', '数学', '英语', '总分'];
+    var header = ['姓名', '语文', '数学', '英语', '总分'];
     var data = [
         {
             '姓名': '小明',
@@ -56,9 +56,9 @@
         }
     ];
 
-    var Table = function (subject, data) {
+    var Table = function (header, data) {
         this.table = null;
-        this.subject = subject;
+        this.header = header;
         this.data = data;
         this.sortableItems = [];
     };
@@ -73,14 +73,14 @@
             //创建表格
             var table = document.createElement('table');
             var tableHtml = '<thead><tr>';
-            for (var i = 0, sub; sub = this.subject[i++];) {
+            for (var i = 0, sub; sub = this.header[i++];) {
                 tableHtml += '<th>' + sub + '</th>';
             }
             tableHtml += '</tr></thead>';
             tableHtml += '<tbody>';
             for (var j = 0, person; person = this.data[j++];) {
                 tableHtml += '<tr>';
-                for (i = 0; sub = subject[i++];) {
+                for (i = 0; sub = header[i++];) {
                     tableHtml += '<td>' + person[sub] + '</td>'
                 }
                 tableHtml += '</tr>';
@@ -96,7 +96,7 @@
             var that = this;
             for (var i = 0, item; item = items[i++];) {
                 index = this.sortableItems.indexOf(item);
-                domIndex = this.subject.indexOf(item);
+                domIndex = this.header.indexOf(item);
                 if (index == -1) {
                     this.sortableItems.push(item);
                     th[domIndex].classList.add('sort');
@@ -111,7 +111,7 @@
             }
         },
         sort: function (item) {
-            var index = this.subject.indexOf(item);
+            var index = this.header.indexOf(item);
             var tbody = this.table.getElementsByTagName('tbody')[0];
             var rows = tbody.getElementsByTagName('tr');
             rows = Array.prototype.slice.call(rows);
@@ -128,11 +128,10 @@
         }
     };
 
-    var table = new Table(subject, data);
+    var table = new Table(header, data);
     table.init();
 })();
 
-
 //只有一个表格  单例模式
-//存储数据如何选择数组还是对象
+//存储数据选择数组还是对象
 //removeEventListener兼容
