@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 29</title>
+    <style>
+        .error {
+            color: #f00;
+        }
+
+        .correct {
+            color: #0f0;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="name-input">名称</label>
+    <input id="name-input" type="text">
+    <input id="validate-btn" type="button" value="验证">
+    <span id="prompt-span">必填，长度为4-16个字符</span>
+</form>
+<script>
+    var validateBtn = document.getElementById("validate-btn");
+    var promptSpan = document.getElementById("prompt-span");
+    addListener(validateBtn, "click", validate);
+
+    function addListener(obj, type, handler) {
+        if (obj.addEventListener) {
+            obj.addEventListener(type, handler);
+        }
+        else if (obj.attachEvent) {
+            obj.attachEvent("on" + type, handler);
+        }
+        else obj["on" + type] = handler;
+    }
+
+    function validate() {
+        var nameInput = document.getElementById("name-input");
+        var nameStr = nameInput.value;
+        var len = 0, count = 0;
+        for (var i = 0; i < nameStr.length; i++) {
+            if (nameStr[i].match(/^[\u4e00-\u9fa5]$/)) {
+                count++;
+            }
+        }
+        len = nameStr.length + count;
+        if (!len) {
+            promptSpan.classList.add('error');
+            promptSpan.textContent = "姓名不能为空";
+            return false;
+        }
+        if (len < 4 || len > 16) {
+            promptSpan.classList.add('error');
+            promptSpan.textContent = "姓名长度必须为4-16个字符";
+            return false;
+        }
+        promptSpan.classList.remove('error');
+        promptSpan.classList.add('correct');
+        promptSpan.textContent = "名称格式正确";
+        return true;
+    }
+
+    //字符串的length属性可写吗
+    //~符号
+</script>
+</body>
+</html>
