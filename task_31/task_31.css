@@ -1,0 +1,19 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+input[type="radio"]:first-child {
+    margin-left: 110px;
+}
+
+label {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#company-container {
+    display: none;
+}
