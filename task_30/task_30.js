@@ -25,14 +25,13 @@
         },
         isPswSame: function (value, errorMsg) {
             var psw = document.getElementById('psw').value;
-            console.log(value, psw);
             if (!(value === psw)) {
                 return errorMsg;
             }
         },
         isEmail: function (value, errorMsg) {
-            var atPos = value.indexOf("@"),
-                dotPos = value.indexOf(".");
+            var atPos = value.indexOf('@'),
+                dotPos = value.indexOf('.');
             if (atPos < 1 || dotPos - atPos < 2 || !value.match(/^[A-z0-9]/)) {
                 return errorMsg;
             }
@@ -47,8 +46,8 @@
     //存储所有input的数组
     var inputs = [
         {
-            dom: document.getElementById("name"),
-            span: document.getElementById("name-prompt"),
+            dom: document.getElementById('name'),
+            span: document.getElementById('name-prompt'),
             prompt: '必填，长度为4-16个字符',
             validator: [
                 {strategy: strategies.isNonEmpty, errorMsg: '名称不能为空'},
@@ -57,8 +56,8 @@
             success: '名称可用'
         },
         {
-            dom: document.getElementById("psw"),
-            span: document.getElementById("psw-prompt"),
+            dom: document.getElementById('psw'),
+            span: document.getElementById('psw-prompt'),
             prompt: '请输入6-16位字母或数字',
             validator: [
                 {strategy: strategies.isNonEmpty, errorMsg: '密码不能为空'},
@@ -67,15 +66,15 @@
             success: '密码可用'
         },
         {
-            dom: document.getElementById("psw-confirm"),
-            span: document.getElementById("psw-confirm-prompt"),
+            dom: document.getElementById('psw-confirm'),
+            span: document.getElementById('psw-confirm-prompt'),
             prompt: '再次输入相同密码',
             validator: [{strategy: strategies.isPswSame, errorMsg: '密码输入不一致'}],
             success: '密码输入一致'
         },
         {
-            dom: document.getElementById("email"),
-            span: document.getElementById("email-prompt"),
+            dom: document.getElementById('email'),
+            span: document.getElementById('email-prompt'),
             prompt: '输入邮箱',
             validator: [
                 {strategy: strategies.isNonEmpty, errorMsg: '邮箱不能为空'},
@@ -84,8 +83,8 @@
             success: '邮箱格式正确'
         },
         {
-            dom: document.getElementById("phone-number"),
-            span: document.getElementById("phone-number-prompt"),
+            dom: document.getElementById('phone-number'),
+            span: document.getElementById('phone-number-prompt'),
             prompt: '请输入11位手机号',
             validator: [
                 {strategy: strategies.isNonEmpty, errorMsg: '手机不能为空'},
@@ -126,8 +125,8 @@
         if (obj.addEventListener) {
             obj.addEventListener(type, handler, false);
         } else if (obj.attachEvent) {
-            obj.attachEvent("on" + type, handler);
-        } else obj["on" + type] = handler;
+            obj.attachEvent('on' + type, handler);
+        } else obj['on' + type] = handler;
     }
 
     function validator() {
