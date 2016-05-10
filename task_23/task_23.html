@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 23</title>
+    <style>
+        .traversing {
+            background-color: #00f;
+        }
+
+        .include {
+            background-color: #0f0;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            border: 1px #000 solid;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        #root {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        form {
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="root">
+    <div>Country
+        <div>China
+            <div>Dalian</div>
+            <div>ShangHai</div>
+            <div>BeiJing</div>
+            <div>HangZhou</div>
+        </div>
+        <div>America</div>
+        <div>Japan
+            <div>Tokyo</div>
+            <div>Japanese</div>
+        </div>
+    </div>
+
+    <div>Note
+        <div>Human
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+        </div>
+        <div>Animal
+            <div>Dog
+                <div>Big Dog</div>
+            </div>
+            <div>Cat</div>
+        </div>
+    </div>
+
+    <div>Fish</div>
+</div>
+<form>
+    <input id="dfs-btn" type="button" value="深度优先遍历">
+    <input id="bfs-btn" type="button" value="广度优先遍历">
+    <input id="search-input" type="text">
+    <input id="dfs-search-btn" type="button" value="深度优先搜索">
+    <input id="bfs-search-btn" type="button" value="广度优先搜索">
+</form>
+<script src="task_23.js"></script>
+</body>
+</html>
