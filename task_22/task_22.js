@@ -35,7 +35,6 @@
     function preOrder(node) {
         if (node !== null) {
             traverseResult.push(node);
-            console.log(node);
             preOrder(node.firstElementChild);
             preOrder(node.lastElementChild);
         }
