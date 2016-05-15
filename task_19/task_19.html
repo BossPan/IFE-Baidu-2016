@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 19</title>
+    <style>
+        #div-container, #div-sort {
+            width: 80%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-end;
+            margin: 0 auto;
+        }
+
+        #div-container div, #div-sort div {
+            background-color: #f00;
+            width: 20px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <input id="input-number" type="text">
+    <input id="left-in" type="button" value="左侧入">
+    <input id="right-in" type="button" value="右侧入">
+    <input id="left-out" type="button" value="左侧出">
+    <input id="right-out" type="button" value="右侧出">
+    <input id="btn-random" type="button" value="随机生成数据">
+    <input id="btn-sort" type="button" value="冒泡排序">
+</form>
+<div id="div-container"></div>
+<script src="task_19.js"></script>
+</body>
+</html>
