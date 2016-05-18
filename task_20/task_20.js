@@ -5,7 +5,6 @@
     var rightOut = document.getElementById("right-out");
     var spanContainer = document.getElementById("span-container");
     var queryBtn = document.getElementById("query-btn");
-    //添加监听事件
     addListener(leftIn, "click", leftInHandler);
     addListener(rightIn, "click", rightInHandler);
     addListener(leftOut, "click", leftOutHandler);
