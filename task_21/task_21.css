@@ -1,0 +1,25 @@
+div {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+span {
+    background-color: #0f0;
+    color: #fff;
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    vertical-align: bottom;
+}
+
+.entering {
+    background-color: #f00;
+}
