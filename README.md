@@ -36,6 +36,8 @@ DEMO
 
 任务34：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_34/task_34.html
 
+任务37：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_37/task_37.html
+
 任务38：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_38/task_38.html
 
 任务39：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_39/task_39.html
