@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/***************************************
+    固定宽度
+***************************************/
+
+/*绝对定位*/
+#centered {
+    background: #ccc;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*负外边距*/
+/*#centered {*/
+    /*background: #ccc;*/
+    /*position: absolute;*/
+    /*width:400px;*/
+    /*height:200px;*/
+    /*left: 50%;*/
+    /*top: 50%;*/
+    /*margin-left:-200px;*/
+    /*margin-top:-100px;*/
+/*}*/
+
+/*float*/
+/*html, body {*/
+    /*height: 100%;*/
+/*}*/
+/*#floater {*/
+    /*position: relative;*/
+    /*float: left;*/
+    /*height: 50%;*/
+    /*margin-bottom: -100px;*/
+/*}*/
+/*#centered {*/
+    /*background: #ccc;*/
+    /*position: relative;*/
+    /*clear: left;*/
+    /*height: 200px;*/
+    /*width: 400px;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/***************************************
+    不固定宽度
+***************************************/
+
+#left-top {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 0 0 100% 0;
+}
+
+#right-bottom {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
