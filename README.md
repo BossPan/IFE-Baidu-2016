@@ -6,7 +6,7 @@ DEMO
 
 任务06：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_06/task_06.html
 
-任务06：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_07/task_07.html
+任务07：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_07/task_07.html
 
 任务13：http://htmlpreview.github.io/?https://github.com/BossPan/IfeBaidu2016/blob/master/task_13/task_13.html
 
