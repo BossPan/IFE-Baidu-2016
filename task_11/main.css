@@ -1,0 +1,227 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+h1,
+header {
+  font-size: 1.375rem; }
+
+h2 {
+  font-size: 1.25rem; }
+
+h3 {
+  font-size: 1.125rem; }
+
+footer {
+  font-size: 0.6rem;
+  color: #aaa; }
+
+.flexible {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  text-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .flexible .item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto; }
+
+.header {
+  background-color: #75D7D9;
+  color: #fff;
+  text-align: center;
+  height: 2.5rem;
+  line-height: 2.5rem; }
+  .header a {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    font-size: 1.25rem;
+    background: url("img/back.png") 10px center no-repeat;
+    background-size: 0.6rem 1.25rem;
+    padding-left: 1.5625rem; }
+
+nav {
+  height: 2.5rem;
+  width: 100%; }
+  nav a {
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+    color: #63625D; }
+    nav a:hover {
+      border-bottom: 2px solid #75D7D9; }
+
+.banner {
+  width: 100%; }
+
+.container {
+  padding: 0 0.625rem; }
+
+.tags {
+  margin: 1.25rem 0; }
+  .tags img {
+    width: 3.125rem; }
+  .tags span {
+    font-size: 1.125rem;
+    display: block;
+    margin-top: 0.625rem; }
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0.625rem 0; }
+
+.columns div {
+  border-right: 1px solid #ccc; }
+  .columns div:last-child {
+    border: none; }
+  .columns div img {
+    height: 5.0rem; }
+  .columns div h2 {
+    margin: 0.9375rem 0; }
+  .columns div h3 {
+    color: #63625D;
+    margin: 0.625rem 0; }
+
+.module {
+  margin-top: 1.25rem; }
+
+section {
+  margin: 1.25rem 0; }
+
+article {
+  margin: 0.625rem 0; }
+
+section .img-box {
+  width: 20%; }
+
+.img-box img {
+  width: 100%;
+  border: 1px solid #ff0;
+  display: inline-block; }
+
+.module .text {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  margin-left: 0.625rem; }
+
+.text span {
+  width: 40%;
+  text-align: center;
+  color: #63625D; }
+
+article .img-box {
+  width: 30%; }
+
+article .content-box {
+  width: 70%; }
+
+.content-box {
+  text-align: left;
+  position: relative;
+  margin-left: 0.625rem; }
+  .content-box footer {
+    position: absolute;
+    left: 0;
+    bottom: 0; }
+
+.img-box-3 .item {
+  width: 33%;
+  margin: 0.625rem 0.3125rem; }
+  .img-box-3 .item img {
+    width: 100%; }
+
+body > footer {
+  height: 3.125rem;
+  background-color: #eee; }
